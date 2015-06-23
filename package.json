@@ -1,0 +1,21 @@
+{
+  "name": "react-moment",
+  "version": "0.1.0",
+  "description": "react js moment component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react-js",
+    "moment"
+  ],
+  "author": "UPGLE (admin@upgle.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jsx": "^2.0.0",
+    "gulp-react": "^3.0.1"
+  }
+}
