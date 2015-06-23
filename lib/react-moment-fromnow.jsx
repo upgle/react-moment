@@ -1,5 +1,5 @@
 
-var ReactMoment = (function(){
+var ReactMomentFromNow = (function(){
     var SetIntervalMixin, component;
 
     SetIntervalMixin = {
@@ -13,7 +13,7 @@ var ReactMoment = (function(){
             this.intervals.map(clearInterval);
         }
     };
-    component = React.createClass({displayName: "component",
+    component = React.createClass({
         mixins: [SetIntervalMixin],
         propTypes: {
             date: React.PropTypes.oneOfType([
@@ -45,7 +45,7 @@ var ReactMoment = (function(){
             this.refs.moment.getDOMNode().innerHTML = moment(this.props.date, this.props.date_type).fromNow();
         },
         render : function() {
-            return (React.createElement("span", {ref: "moment"}));
+            return (<span ref="moment"></span>);
         }
     });
     return component;
